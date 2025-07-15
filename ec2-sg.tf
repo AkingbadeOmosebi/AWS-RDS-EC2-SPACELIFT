@@ -32,6 +32,14 @@ resource "aws_security_group" "ec2-sg" {
     description = "http"
   }
 
+  # This one is required for PostgreSql port, beacuse i would likke to install postgresql on the ec2
+  ingress {
+    from_port   = 5432
+    to_port     = 5432
+    protocol    = "tcp"
+    cidr_blocks = [var.my_ip] 
+    description = " PostgreSql port"
+  }
 
   egress {
     from_port   = 0
