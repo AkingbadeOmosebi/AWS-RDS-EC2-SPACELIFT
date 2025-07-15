@@ -11,7 +11,7 @@ variable "existing_key_pair_name" {
 variable "username" {
   description = "RDS username"
   type        = string
-  default     = "admin"  # The admin is s stuck standardf name, so i consider it as a Non-sensitive info. although its not to display it in variable file that is pushed
+  default     = "mydbadmin"  # The admin is s stuck standardf name, so i consider it as a Non-sensitive info. although its not to display it in variable file that is pushed
 }
 
 variable "password" {
