@@ -4,6 +4,7 @@ resource "aws_instance" "ec2-mssql" {
   subnet_id              = aws_subnet.db-subnet01.id
   vpc_security_group_ids = [aws_security_group.ec2-sg.id]
   key_name               = var.existing_key_pair_name
+  associate_public_ip_address = true
 
    tags = {
     Name = "ec2-mssql-instance"
