@@ -6,7 +6,7 @@
 
 # Overall objectives or scope of the project
 
-Objectives is to demonstrate the following capabilities: Creation, Operation, Migration, Updation and Deletion. This will encompass both ec2 and rds usin terraform to spin up an ec2 and install a DB on it, create some data, then migrate it to an RDS instance, connect to it using a MYSQL server manager, perform some operations and then and then destroy the resources.
+Objectives is to demonstrate the following capabilities: Creation, Operation, Migration, Updation and Deletion. This will encompass both ec2 and rds usin terraform to spin up an ec2 and install a DB on it, create some data, then migrate it to an RDS instance, connect to it using an SQL server manager to perform some operations and then and then destroy the resources.
 
 This is a step-by-step guide to achieve this using Terraform and Spacelift.
 
