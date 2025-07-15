@@ -1,4 +1,4 @@
-resource "aws_instance" "ec2-mssql" {
+resource "aws_instance" "ec2-postgresql" {
   ami                    = "ami-0a87a69d69fa289be" # eu-central-1 frankfurt
   instance_type          = "t2.micro"
   subnet_id              = aws_subnet.db-subnet01.id
