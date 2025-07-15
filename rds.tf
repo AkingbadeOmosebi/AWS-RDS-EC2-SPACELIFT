@@ -4,7 +4,7 @@
 resource "aws_db_instance" "postgresql" {
   allocated_storage      = 20
   engine                 = "postgres"
-  engine_version         = "17.4-R1"          # supported version in your eu-central-1
+  engine_version         = "17.4"          # supported version in your eu-central-1
   instance_class         = "db.t3.micro"   # Free Tier eligible
   username               = var.username
   password               = var.password
